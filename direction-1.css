@@ -1,0 +1,80 @@
+:root {
+	--font-family: "Space Mono";
+	--h1: 102px;
+	--bold: 700;
+	--font-spacing: 30%;
+	--h2: 72px;
+	--h2-weight: 400;
+	--background1: #000000;
+	--primary-color: #ED6810;
+	--secondary-color: #C538FA;
+	--text-color: #ffffff;
+	--p: 18px;
+	--spacing: 1em;
+	--margin: 8vw;
+	--pullquote: 56px;
+}
+
+/* first link is broken right now??? */
+
+.navbar {
+	background-color: var(--secondary-color);
+	border-radius: 20%;
+	/* position: sticky; */
+	/* max-width: 40vw; */
+	/* left: 50vw;
+	top: 3vh; */
+}
+
+.navlink {
+	font-size: 32px;
+}
+
+.navlink:hover {
+	color: var(--background);
+}
+
+h1 {
+	color: var(--secondary-color);
+	text-align: right;
+}
+
+h1 + p {
+	text-align: right;
+}
+
+h2 {
+	border-bottom: 4px solid;
+	border-bottom-color: #ffffff;
+	padding-left: var(--margin);
+	padding-right: var(--margin);
+}
+
+ul {
+	margin-left: 12vw;
+}
+
+li {
+	list-style-type: "→";
+	padding-left: 2em;
+}
+
+em {
+	font-weight: var(--bold);
+	text-decoration: underline;
+}
+
+.pullquote {
+	text-align: right;
+}
+
+#top {
+	background-color: var(--secondary-color);
+	border-radius: 50%;
+	position: sticky;
+	max-width: 10vw;
+	max-height: 10vw;
+	bottom: 2vh;
+	left : 90vw;
+	font-size: 88px;
+}
