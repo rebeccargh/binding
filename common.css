@@ -59,6 +59,10 @@ p, ul {
 	color: var(--text-color);
 }
 
+li {
+	list-style-position: outside;
+}
+
 .author {
 	max-width: 100%;
 	padding: calc(var(--spacing)/2);
@@ -66,5 +70,4 @@ p, ul {
 
 .pullquote {
 	font-size: var(--pullquote);
-	padding-top: calc(var(--spacing)*2);
 }

@@ -20,7 +20,7 @@
 
 .navbar {
 	background-color: var(--secondary-color);
-	border-radius: 20%;
+	border-radius: 70px;
 	/* position: sticky; */
 	/* max-width: 40vw; */
 	/* left: 50vw;
@@ -28,10 +28,12 @@
 }
 
 .navlink {
-	font-size: 32px;
+	font-size: 40px;
 }
 
-.navlink:hover {
+/* Needs fixing to black if i use this direction */
+
+p .navlink:hover {
 	color: var(--background);
 }
 
@@ -73,10 +75,13 @@ ul {
 	margin-left: 12vw;
 }
 
-li {
+/* hidden to avoid duplication */
+
+/* li {
 	list-style-type: "→";
 	padding-left: 2em;
-}
+	list-style-position: outside;
+} */
 
 em {
 	font-weight: var(--bold);
@@ -85,11 +90,12 @@ em {
 
 .pullquote {
 	text-align: center;
+	padding-top: calc(var(--spacing)*2);
 }
 
 #top {
 	background-color: var(--secondary-color);
-	border-radius: 50%;
+	border-radius: 50px;
 	position: sticky;
 	max-width: 10vw;
 	max-height: 10vw;
