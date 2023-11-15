@@ -8,6 +8,7 @@
 	--background1: #000000;
 	--primary-color: #ED6810;
 	--secondary-color: #C538FA;
+	--tertiary-color: #FFB84D;
 	--text-color: #ffffff;
 	--p: 18px;
 	--spacing: 1em;
@@ -50,6 +51,24 @@ h2 {
 	padding-right: var(--margin);
 }
 
+p:first-of-type {
+	padding-top: calc(var(--spacing)*3);
+}
+
+p:hover:nth-child(1n) {
+	color: var(--primary-color);
+}
+p:hover:nth-child(2n) {
+	color: var(--secondary-color);
+}
+p:hover:nth-child(3n) {
+	color: var(--tertiary-color);
+}
+
+li:hover {
+	color: var(--secondary-color);
+}
+
 ul {
 	margin-left: 12vw;
 }
@@ -65,7 +84,7 @@ em {
 }
 
 .pullquote {
-	text-align: right;
+	text-align: center;
 }
 
 #top {

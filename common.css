@@ -2,7 +2,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 body {
 	background-color: var(--background1);
@@ -13,6 +13,8 @@ body {
 	position: relative;
 	max-width: 100%
 }
+
+/* Need to mess with margins vs padding to get child elements to span whole width when necessary (direction 2 lines, direction 3 subheading box) */
 
 section {
 	position: relative;
@@ -48,10 +50,6 @@ h2 {
 	padding-top: var(--spacing);
 	padding-bottom: var(--spacing);
 	color: var(--text-color);
-}
-
-p:first-of-type {
-	padding-top: calc(var(--spacing)*3);
 }
 
 p, ul {

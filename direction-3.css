@@ -1,0 +1,128 @@
+:root {
+	--font-family: "Spectral";
+	--h1: 174px;
+	--bold: 800;
+	--font-spacing: 30%;
+	--h2: 80px;
+	--h2-weight: 600;
+	--background1: #fff5ea;
+	--primary-color: #000000;
+	--secondary-color: #3f5936;
+	--text-color: #000000;
+	--p: 18px;
+	--spacing: 1em;
+	--margin: 8vw;
+	--pullquote: 56px;
+	--p-spacing:  3ch;
+}
+
+/* first link is broken right now??? */
+
+.navbar {
+	border-bottom: 3px solid;
+	border-color: var(--secondary-color);
+	padding-bottom: 0px;
+}
+
+.navlink {
+	border: 4px solid;
+	border-radius: 20px 20px 0px 0px;
+	background-color: var(--secondary-color);
+	color: var(--background1);
+	padding-left: var(--spacing);
+	padding-right: var(--spacing);
+	padding-bottom: 0px;
+	padding-top: calc(var(--spacing)/4);
+	font-size: 32px;
+}
+
+.navlink:hover {
+	background: var(--background1);
+	border-color: var(--secondary-color);
+	border: 4px solid;
+	border-radius: 20px 20px 0px 0px;
+	color: var(--secondary-color);
+	font-weight: var(--h2-weight);
+	font-size: 38px;
+
+}
+
+h1 {
+	font-family: "Abril Fatface";
+	text-transform: uppercase;
+	padding-top: calc(var(--spacing)/2);
+	color: var(--secondary-color);
+
+}
+
+.author {
+	padding-top: calc(var(--spacing)/4);
+	padding-bottom: calc(var(--spacing)/2);
+	font-weight: var(--h2-weight);
+}
+
+h2 {
+	margin-left: calc(var(--margin)*2);
+	color: var(--secondary-color);
+	
+}
+
+.firstcharacter {
+	font-size: 200px;
+}
+
+p {
+	font-weight: 400;
+	line-height: var(--p-spacing);
+}
+
+ul {
+	margin-left: 12vw;
+	background-color: var(--secondary-color);
+}
+
+li {
+	list-style-type: "→";
+	padding-left: 2em;
+	color: var(--background1);
+}
+strong {
+	font-weight: var(--bold);
+}
+
+em {
+	font-style: italic;
+}
+
+.pullquote + p {
+	background-color: var(--secondary-color);
+	color: var(--background1);
+	margin-top: 0px;
+}
+
+section:nth-child(3) p {
+	background-color: var(--secondary-color);
+	color: var(--background1);
+}
+
+.pullquote {
+	color: var(--background1);
+	text-align: right;
+	background-color: var(--secondary-color);
+	padding: 1vh;
+	margin-bottom: var(--spacing);
+	margin-left: calc(var(--spacing)*5);
+	border-radius: 20px 20px 0px 0px;
+}
+
+#top {
+	color: var(--background1);
+	background-color: var(--secondary-color);
+	border-radius: 10px;
+	position: sticky;
+	max-width: 10vw;
+	max-height: 10vw;
+	bottom: 2vh;
+	left : 90vw;
+	font-size: 88px;
+}
