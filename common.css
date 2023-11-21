@@ -191,6 +191,15 @@ em {
 	text-align: right;
 }
 
+.poem {
+	margin-left: 8vw;
+	margin-top: calc(var(--spacing)*2);
+}
+.stanza:after {
+	content: "~~~~~";
+	margin-left: 8vw;
+}
+
 /* Navbar display toggle for fake hamburger */
 
 @media screen and (max-width: 750px) {
