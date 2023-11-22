@@ -105,6 +105,9 @@ h2 {
 	border-top: 4px dotted;
 	border-color: var(--secondary-color);
 	color: var(--primary-color);
+	background-color: var(--background1);
+	position: sticky;
+	top: 0;
 }
 
 p {
