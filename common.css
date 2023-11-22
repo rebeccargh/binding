@@ -183,6 +183,18 @@ em {
 	margin-left: 8vw;
 }
 
+.block {
+	text-align: center;
+	background-color: var(--primary-color);
+	color: var(--background1);
+	padding-left: calc(var(--spacing)*1.5);
+	padding-right: calc(var(--spacing)*1.5);
+	padding-top: var(--spacing);
+	padding-bottom: calc(var(--spacing)/1.5);
+	border-radius: 15px;
+	margin-bottom: calc(var(--spacing)*2);
+}
+
 /* Links that aren't the navbar */
 
 #top {
