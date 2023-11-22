@@ -51,7 +51,7 @@ nav {
 		border-color: var(--primary-color);
 }
 
-#navbar {
+.navbar {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
