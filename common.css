@@ -25,6 +25,10 @@
 
 /* General formatting */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--background1);
 	font-family: var(--title-font);
@@ -33,8 +37,6 @@ body {
 	position: relative;
 	max-width: 100%
 }
-
-/* Need to mess with margins vs padding to get child elements to span whole width when necessary (direction 2 lines, direction 3 subheading box) */
 
 section {
 	position: relative;
@@ -57,7 +59,7 @@ nav {
 	max-width: 100%;
 }
 
-a {
+a:not(.embed-link, #top, .index-link) {
 	border: 4px solid;
 	border-radius: 20px 20px 0px 0px;
 	border-color: var(--primary-color);
@@ -70,7 +72,7 @@ a {
 	font-size: 28px;
 }
 
-a:hover {
+a:not(.embed-link, #top, .index-link):hover {
 	background: var(--background1);
 	margin-bottom: -2px;
 	border-color: var(--primary-color);
@@ -100,7 +102,7 @@ h2 {
 	padding-top: calc(var(--spacing)/3);
 	padding-bottom: calc(var(--spacing)/3);
 	border-bottom: 4px dotted;
-	
+	border-top: 4px dotted;
 	border-color: var(--secondary-color);
 	color: var(--primary-color);
 }
@@ -109,9 +111,10 @@ p {
 	font-family: var(--body-font);
 	font-weight: 300;
 	line-height: var(--p-spacing);
+	color: var(--text-color);
 }
 
-p:first-of-type:not(.pullquote) {
+p:first-of-type:not(.pullquote, .author) {
 	padding-top: calc(var(--spacing)*3);
 }
 
@@ -123,7 +126,6 @@ p, ul {
 	max-width: 65ch;
 	font-size: var(--p);
 	padding-bottom: calc(var(--spacing)*2);
-	color: var(--text-color);
 }
 
 ul {
@@ -151,10 +153,11 @@ em {
 .author {
 	padding: calc(var(--spacing)/4);
 	font-weight: var(--h2-weight);
-	border-bottom: 4px dotted;
 	border-color: var(--secondary-color);
 	max-width: 100%;
-	font-size: calc(var(--p)*1.5)
+	font-size: calc(var(--p)*1.5);
+	padding-top: calc(var(--spacing)*3);
+	text-align: right;
 }
 
 .pullquote {
@@ -169,52 +172,92 @@ em {
 	margin-right: 25vw;
 }
 
-#top {
-	color: var(--text-color);
-	background-color: var(--primary-color);
-	border-radius: 15px;
-	position: fixed;
-	width: 90vw;
-	height: 5vh;
-	bottom: 2vh;
-	left : -2.5vw;
-	font-family: var(--title-font);
-	font-size: var(--p);
-	text-align: center;
-}
-
-#mobile-navbar {
-	text-align: right;
-}
-
 .poem {
 	margin-left: 8vw;
 	margin-top: calc(var(--spacing)*2);
+	border-top: 4px dotted;
+	border-color: var(--secondary-color);
 }
 .stanza:after {
 	content: "~~~~~";
 	margin-left: 8vw;
 }
 
+/* Links that aren't the navbar */
+
+#top {
+	color: var(--text-color);
+	background-color: var(--primary-color);
+	border-radius: 15px;
+	font-family: var(--title-font);
+	font-size: calc(var(--p)*1.5);
+	color: var(--background1);
+	text-align: center;
+	padding-top: calc(var(--spacing)/4);
+	position: fixed;
+	width: 90vw;
+	height: 5vh;
+	bottom: 1vh;
+	left: 5vw;
+}
+
+#top:hover {
+	font-size: calc(var(--p)*1.7);
+	font-weight: 600;
+	padding-top: calc(var(--spacing)/6);
+}
+
+
+#mobile-navbar {
+	text-align: right;
+}
+
+.index-link {
+	color: var(--primary-color);
+	text-decoration: underline;
+	font-size: calc(var(--p)*1.5);
+	vertical-align: middle;
+}
+
+.index-link:hover {
+	color: var(--secondary-color);
+	text-decoration: underline;
+	font-size: calc(var(--p)*1.5);
+}
+
+.embed-link {
+	color: var(--primary-color);
+	text-decoration: underline;
+	font-size: var(--p);
+
+}
+
+.embed-link:hover {
+	color: var(--secondary-color);
+	text-decoration: underline;
+	font-size: var(--p);
+}
+
+
 /* Navbar display toggle for fake hamburger */
 
 @media screen and (max-width: 1250px) {
-	a {
+	a:not(.embed-link, #top) {
 		font-size: 24px;
 		padding-left: calc(var(--spacing)/2);
 		padding-right: calc(var(--spacing)/2);
 	}
-	a:hover {
+	a:not(.embed-link, #top):hover {
 		font-size: 38px;
 	}
 }
 @media screen and (max-width: 990px) {
-	a {
+	a:not(.embed-link, #top) {
 		font-size: 20px;
 		padding-left: calc(var(--spacing)/2);
 		padding-right: calc(var(--spacing)/2);
 	}
-	a:hover {
+	a:not(.embed-link, #top):hover {
 		font-size: 24px;
 	}
 }
