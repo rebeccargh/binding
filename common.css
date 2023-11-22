@@ -275,7 +275,7 @@ em {
 }
 
 @media screen and (max-width: 830px) {
-	#navbar {
+	.navbar {
 		display: none;
 	}
 }
