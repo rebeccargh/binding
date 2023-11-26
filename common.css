@@ -21,6 +21,12 @@
 	--margin: 8vw;
 	--pullquote: 42px;
 	--p-spacing:  3ch;
+	--green1: #018374;
+	--green2: #014323;
+	--yellow1: rgb(255, 240, 25);
+	--yellow2: gold;
+	--red1: red;
+	--red2: maroon;
 }
 
 /* General formatting */
@@ -57,6 +63,8 @@ nav {
 	justify-content: space-around;
 	align-items: baseline;
 	max-width: 100%;
+	position: relative;
+	max-height: 56px;
 }
 
 a:not(.embed-link, #top, .index-link) {
@@ -68,21 +76,35 @@ a:not(.embed-link, #top, .index-link) {
 	padding-left: var(--spacing);
 	padding-right: var(--spacing);
 	padding-bottom: 0px;
-	padding-top: calc(var(--spacing)/4);
+	padding-top: calc(var(--spacing)/5);
 	font-size: 28px;
+	transition: all 0.2s;
 }
 
 a:not(.embed-link, #top, .index-link):hover {
 	background: var(--background1);
-	margin-bottom: -2px;
 	border-color: var(--primary-color);
 	border-top: 4px solid;
 	border-left: 4px solid;
 	border-right: 4px solid;
 	border-radius: 20px 20px 0px 0px;
 	color: var(--primary-color);
+	padding-bottom: calc(var(--spacing)*1.3);
 	font-weight: var(--h2-weight);
 	font-size: 32px;
+	max-height: 48px;
+	position: relative;
+	top: 3px;
+}
+
+.active1 {
+	background: var(--secondary-color);
+}
+
+.active2 {
+	background: var(--background1);
+	border-color: var(--red1);
+	color: var(--red1);
 }
 
 /* font styles */
@@ -214,6 +236,7 @@ em {
 	height: 5vh;
 	bottom: 1vh;
 	left: 5vw;
+	transition: all 0.3s;
 }
 
 #top:hover {
@@ -232,6 +255,7 @@ em {
 	text-decoration: underline;
 	font-size: calc(var(--p)*1.5);
 	vertical-align: middle;
+	transition: all 0.3s;
 }
 
 .index-link:hover {
@@ -244,6 +268,7 @@ em {
 	color: var(--primary-color);
 	text-decoration: underline;
 	font-size: var(--p);
+	transition: all 0.3s;
 
 }
 
@@ -287,3 +312,5 @@ em {
 		display: none;
 	}
 }
+
+/* Media queries desktop sizes */
