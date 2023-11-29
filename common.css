@@ -98,7 +98,7 @@ nav:not(.menu){
 	font-size: calc(var(--p)*1.5);
 	transition: all 0.2s;
 	position: relative;
-	top: 5px;
+	top: 0px;
 }
 
 /* default colorway */
@@ -142,7 +142,7 @@ nav:not(.menu){
 	font-weight: var(--h2-weight);
 	max-height: 48px;
 	position: relative;
-	top: 10px;
+	top: 0px;
 }
 
 /* active state colorways */
@@ -457,7 +457,7 @@ p.footer:nth-of-type(2) {
 	}
 }
 @media screen and (min-width: 881px) {
-	#mobile-nav {
+	#hamburger {
 		display: none;
 	}
 	.stanza:nth-of-type(even) {
