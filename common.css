@@ -56,20 +56,20 @@ nav:not(.menu){
 }
 
 #hamburger {
-	border-color: var(--primary-blue);
 	background-color: var(--primary-blue);
 	color: var(--background1);
-	border: 3px solid;
+	border: 1px solid;
+	border-color: var(--primary-blue);
 	border-radius: 20px 20px 0px 0px;
 	width: 64px;
 	padding-bottom: calc(var(--spacing)/4);
 	padding-top: calc(var(--spacing)/4);
 	text-align: center;
 	position: relative;
-	top: 7px;
+	top: 4px;
 	left: 85vw;
 	font-size: calc(var(--p)*1.5);
-	z-index: -1;
+	z-index: 1;
 }
 
 .navbar {
@@ -77,7 +77,7 @@ nav:not(.menu){
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: baseline;
-	padding-top: calc(var(--spacing)*2);
+	padding-top: calc(var(--spacing)*3);
 	max-width: 100%;
 	max-height: 96px;
 	position: relative;
@@ -457,7 +457,7 @@ p.footer:nth-of-type(2) {
 	}
 }
 @media screen and (min-width: 881px) {
-	#hamburger {
+	#mobile-nav {
 		display: none;
 	}
 	.stanza:nth-of-type(even) {
