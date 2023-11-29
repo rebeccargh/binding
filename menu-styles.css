@@ -2,13 +2,14 @@ body {
 	background-color: var(--primary-blue);
 	max-width: 100vw;
 	position: relative;
+	color: var(--background1);
 }
 
 #back {
 	text-align: right;
 	position: absolute;
-	right: 2vw;
-	top: -11vh;
+	right: 8vw;
+	top: -8vh;
 	font-size: 32px;
 	color: var(--background1);
 }
